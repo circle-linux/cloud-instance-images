@@ -1,0 +1,20 @@
+<template>
+    <name>Circle-8-Container-8.5.20220402.1.aarch64</name>
+        <os>
+            <name>Fedora</name>
+            <version>20</version>
+            <arch>aarch64</arch>
+            <install type='url'>
+                    <url>https://mirrors.xtom.de/circle/8/BaseOS/aarch64/os/</url>
+            </install>
+        <icicle>
+                <extra_command>rpm -qa --qf '%{NAME},%{VERSION},%{RELEASE},%{ARCH},%{EPOCH},%{SIZE},%{SIGMD5},%{BUILDTIME}
+'</extra_command>
+            </icicle>
+        </os>
+    <description>Circle-8-Container-8.5.20220402.1.aarch64 OS</description>
+    <disk>
+        <size>10G</size>
+    </disk>
+</template>
+
