@@ -3,9 +3,9 @@
         <os>
             <name>Fedora</name>
             <version>20</version>
-            <arch>aarch64</arch>
+            <arch>ppc64le</arch>
             <install type='url'>
-                    <url>https://mirrors.xtom.de/circle/8/BaseOS/ppc64le/os/</url>
+                    <url>https://mirror.cclinux.org/pub/circle/8/BaseOS/ppc64le/os/</url>
             </install>
         <icicle>
                 <extra_command>rpm -qa --qf '%{NAME},%{VERSION},%{RELEASE},%{ARCH},%{EPOCH},%{SIZE},%{SIGMD5},%{BUILDTIME}
