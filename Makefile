@@ -4,7 +4,7 @@ KICKSTART_DIR  = kickstarts
 KICKSTART_PATH = "${KICKSTART_DIR}/Circle-8-Container.ks"
 LOG_DIR        = logs
 OUT            = out
-RELEASE_VER    = 8.5
+RELEASE_VER    = 8.6
 MAJOR          = $(shell v='$(RELEASE_VER)'; echo "$${v%.*}")
 TEMPLATE_DIR   = templates
 TEMPLATE_PATH  = "${TEMPLATE_DIR}/tdl-${ARCH}.xml"
@@ -36,7 +36,7 @@ publish:
 	@echo $(OUTNAME)-$(ARCH).tar.xz
 
 $(KICKSTART_DIR):
-	git clone --branch c$(MAJOR) --single-branch https://github.com/bella485/kickstarts.git kickstarts
+	git clone --branch c$(MAJOR) --single-branch https://gitee.com/nictai/kickstarts kickstarts
 
 $(BASEIMAGE_META): $(KICKSTART_DIR)
 	sudo imagefactory $(DEBUGPARAM) base_image \
