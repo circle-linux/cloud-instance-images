@@ -1,18 +1,18 @@
 <template>
-    <name>Circle-8-Container-8.8.20240202.1.ppc64le</name>
+    <name>Circle-9-Container-9.3.20240202.1.ppc64le</name>
         <os>
             <name>Fedora</name>
-            <version>20</version>
-            <arch>aarch64</arch>
+            <version>28</version>
+            <arch>ppc64le</arch>
             <install type='url'>
-		    <url>https://mirror.cclinux.org/pub/circle/8.8/BaseOS/ppc64le/os/</url>
+		    <url>https://mirror.cclinux.org/pub/circle/9/BaseOS/ppc64le/os/</url>
             </install>
         <icicle>
                 <extra_command>rpm -qa --qf '%{NAME},%{VERSION},%{RELEASE},%{ARCH},%{EPOCH},%{SIZE},%{SIGMD5},%{BUILDTIME}
 '</extra_command>
             </icicle>
         </os>
-    <description>Circle-8-Container-8.8.20240202.1.ppc64le OS</description>
+    <description>Circle-9-Container-9.3.20240202.1.ppc64le OS</description>
     <disk>
         <size>10G</size>
     </disk>
