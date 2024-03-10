@@ -5,7 +5,7 @@
             <version>28</version>
             <arch>aarch64</arch>
             <install type='url'>
-		    <url>https://mirrors.tencent.com/circle/9/BaseOS/aarch64/os/</url>
+		    <url>https://mirror.cclinux.org/pub/circle/9/BaseOS/aarch64/os/</url>
             </install>
         <icicle>
                 <extra_command>rpm -qa --qf '%{NAME},%{VERSION},%{RELEASE},%{ARCH},%{EPOCH},%{SIZE},%{SIGMD5},%{BUILDTIME}
