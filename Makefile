@@ -4,7 +4,7 @@ KICKSTART_DIR  = kickstarts
 KICKSTART_PATH = "${KICKSTART_DIR}/Circle-8-Container.ks"
 LOG_DIR        = logs
 OUT            = out
-RELEASE_VER    = 8.8
+RELEASE_VER    = 8.10
 MAJOR          = $(shell v='$(RELEASE_VER)'; echo "$${v%.*}")
 TEMPLATE_DIR   = templates
 TEMPLATE_PATH  = "${TEMPLATE_DIR}/tdl-${ARCH}.xml"
@@ -39,6 +39,7 @@ $(KICKSTART_DIR):
 	git clone --branch cc$(MAJOR) --single-branch https://github.com/circle-linux/kickstarts.git  kickstarts
 
 $(BASEIMAGE_META): $(KICKSTART_DIR)
+	sed -i 's/$$basearch/$(ARCH)/g' kickstarts/*.ks
 	sudo imagefactory $(DEBUGPARAM) base_image \
 		--parameter offline_icicle true \
 		--file-parameter install_script ${KICKSTART_PATH} \
